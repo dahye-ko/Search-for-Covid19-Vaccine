@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=카카오 인증 키&libraries=services"></script>
+    <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="inner">
+        <h1 id="title">코로나 19 백신 접종 진료소를 검색하세요</h1>
+
+        <form action="#" id="searchForm"> 
+            <input type="text" id="searchKeyword" placeholder="시군구 ex 대전" autocomplete="off" />    
+        </form>
+        <div id="numOfResult"></div>
+        <div class="gridContainer">
+            <div id="resultBox"></div>
+            <div id="map"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
