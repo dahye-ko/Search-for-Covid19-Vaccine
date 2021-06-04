@@ -5,8 +5,7 @@ const $resultBox = document.querySelector("#resultBox");
 const $kakaoMap = document.querySelector('#map')
 
 // 공공데이터포털에서 발급받은 오픈 API의 일반 인증키
-const SERVICE_KEY =
-  "일반 인증키";
+const SERVICE_KEY = '일반 인증키'
 
 // 카카오 지도
 const mapContainer = document.getElementById('map'), // 지도를 표시할 div
