@@ -6,28 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>코로나19 백신 접종 진료소 찾기</title>
+    <!-- GOOGLE MATERIAL DESIGN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 웹 브라우저 기본 스타일 초기화 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=카카오 지도 API javaScript 키&libraries=services"></script>
+    <!-- main.css 연결 -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- main.js 연결 -->
     <script defer src="./js/main.js"></script>
+    <!-- 카카오 지도 api -->
+    <!-- 발급받은 APP KEY를 사용하세요 부분에 javascript key를 입력하세요 -->
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 사용하세요&libraries=services"></script>
 </head>
 
 <body>
     <div class="inner">
         <h1 id="title">코로나19 백신 접종 진료소를 검색하세요</h1>
-        <form action="#" id="searchForm"> 
-            <input type="text" id="searchKeyword" placeholder="시군구 ex 대전" autocomplete="off" />    
+        <!-- 검색창 -->
+        <form action="#" id="searchForm">
+            <input type="text" id="searchField" placeholder="시군구 ex 대전" autocomplete="off" />
         </form>
+        <!-- 검색결과 수 -->
         <div id="numOfResult"></div>
         <div class="gridContainer">
+            <!-- 진료소 정보 -->
             <div id="resultBox"></div>
+            <!-- 카카오 지도 -->
             <div id="map"></div>
         </div>
     </div>
-
 </body>
 
 </html>

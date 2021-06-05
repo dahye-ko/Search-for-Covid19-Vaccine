@@ -1,4 +1,4 @@
-/* COMMON */
+/* 일반 */
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -28,7 +28,7 @@ form {
     align-items: center;
 }
 
-form input#searchKeyword {
+form input#searchField {
     margin-top: 2rem;
     width: 40%;
     padding: 10px 32px;
@@ -39,7 +39,7 @@ form input#searchKeyword {
     transition: .4s ease;
 }
 
-form input#searchKeyword:focus {
+form input#searchField:focus {
     background-color: #33333330;
 }
 
@@ -87,17 +87,17 @@ form input#searchKeyword:focus {
 
 /* 검색 결과 상세 정보 */
 
-.facilityHead {
+.centerHead {
     width: 100%;
     padding-bottom: .5rem;
 }
 
-.facilityHead .facilityName {
+.centerHead .centerName {
     font-size: 20px;
     font-weight: 700;
 }
 
-.facilityHead .facilityTag {
+.centerHead .centerTag {
     float: right;
     font-size: 11px;
     padding: 4px;
@@ -106,17 +106,17 @@ form input#searchKeyword:focus {
     border-radius: 3px;
 }
 
-.facilityAddress {
+.centerAddress {
     padding-bottom: .5rem;
 }
 
-.facilityPhoneNumber {
+.centerPhoneNumber {
     display: flex;
     align-items: center;
     font-size: 14px;
 }
 
-.facilityPhoneNumber .material-icons {
+.centerPhoneNumber .material-icons {
     font-size: 18px;
     border-radius: 50%;
     margin-right: .5rem;
@@ -130,10 +130,8 @@ form input#searchKeyword:focus {
     display: block;
 }
 
-#info {
-    width: 300px;
-    height: 100%;
+#infoWindow {
+    width: 150px;
     text-align: center;
-    padding: 6px;
-    box-sizing: border-box;
+    padding: 6px 4px;
 }
